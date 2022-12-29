@@ -2,14 +2,9 @@ import java.io.*;
 import java.util.*;
 
 class Solution {
-    public int[] solution(int n) {
-        // 박스 개수
-        int num = 0;
-        for(int i=1; i<=n; i++)
-            num += i;
-        
+    public int[] solution(int n) {      
         // 삼각형 배열
-        int[] triangle = new int[num];
+        int[] triangle = new int[n*(n+1)/2];
         // 이차원 형태로 넣을 배열
         int[][] temp = new int[n][n];
         
@@ -35,6 +30,7 @@ class Solution {
             }
         }
         
+        // 1차원 배열로 변환
         int idx = 0;
         for(int i=0; i<n;i++){
             for(int j=0;j<n;j++){

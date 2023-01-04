@@ -48,9 +48,7 @@ class Solution {
         return answer;
     }
     
-    public void dfs(char[][] place, int depth, int r, int c){
-        // 방문처리
-        visited[r][c] = true;     
+    public void dfs(char[][] place, int depth, int r, int c){     
         // 맨해튼거리 3 볼 필요 없고
         if(depth==3)
             return;
@@ -59,6 +57,8 @@ class Solution {
             chk = true;
             return;
         }
+        // 방문처리
+        visited[r][c] = true;
         // 미준수한 사람 없으면 이동
         for(int d=0;d<4;d++){
             // 이동
@@ -72,7 +72,6 @@ class Solution {
                 continue;
             // 보내!
             dfs(place, depth+1, nr, nc);
-            visited[nr][nc]=false;
         }
         
     }

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-// ***String.replaceAll()을 활용하여 풀 수 있음.***
+// String.replaceAll()을 활용하여 풀 수 있음.
 class Solution {
     public int solution(String s) {
         int answer = 0;

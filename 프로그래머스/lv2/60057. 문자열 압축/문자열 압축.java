@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-// 문자열 s를 1~len/2까지 단위별로 잘라 압축된 문자열의 길이를 최솟값으로 갱신해주었습니다.
 class Solution {
     public int solution(String s) {
         int answer = 9999;
@@ -15,7 +14,7 @@ class Solution {
         char[] str = s.toCharArray();           // char 배열로
         StringBuilder cut = new StringBuilder(); // 문자열 나눌 cut
         
-        for(int i=1;i<=len/2;i++){                      // 문자열을 나눌 단위 1~len/2
+        for(int i=1;i<=len/2;i++){                      // 문자열을 나눌 단위 1~s/2
             int idx = 0;                                // str을 순회할 idx
             ArrayList<String> temp = new ArrayList<>(); // 나눈 문자열을 담을 temp 
             

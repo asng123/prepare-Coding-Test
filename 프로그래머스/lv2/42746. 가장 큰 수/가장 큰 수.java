@@ -13,14 +13,14 @@ class Solution {
         Arrays.sort(nums, (o1, o2) -> {
             return (o2+o1).compareTo(o1+o2); 
         });
-        // 정답 넣을 ans
-        String ans = "";
+        // 정답 넣을 ans, String에 +하는거 오래걸린다.
+        StringBuilder ans = new StringBuilder();
         // 정답 넣기
         for (int i=0; i<numbers.length; i++)
-            ans += nums[i];
+            ans.append(nums[i]);
         // 첫글자가 0이라면 return 0
-        if(ans.charAt(0) == '0')
+        if(ans.toString().charAt(0) == '0')
             return "0";
-        return  ans;
+        return ans.toString();
     }
 }

@@ -15,7 +15,7 @@ class Solution {
             // ** ArrayList 정렬 방법
             // temp.sort(Comparator.naturalOrder());
             Collections.sort(temp);
-            
+            //답안 넣기
             answer.add(temp.get(commands[i][2]-1));
             temp.clear();
         }

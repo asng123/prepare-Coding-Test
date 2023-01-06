@@ -1,6 +1,8 @@
 import java.util.*;
 import java.io.*;
 
+// deque
+// add,poll,peek 을 First,Last로 가능
 public class Solution {
     public ArrayList solution(int []arr) {
         ArrayList<Integer> answer = new ArrayList<>();  // return할 arraylist

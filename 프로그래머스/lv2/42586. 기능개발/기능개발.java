@@ -1,6 +1,7 @@
 import java.util.*;
 import java.io.*;
 
+// 속도만큼 진행시키면서 풀이
 class Solution {
     public ArrayList solution(int[] progresses, int[] speeds) {
         ArrayList<Integer> answer = new ArrayList<>();

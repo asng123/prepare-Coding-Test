@@ -1,6 +1,10 @@
 import java.util.*;
 import java.io.*;
 
+// 우선순위와 index를 같이 dq에 넣어주고,
+// 우선순위 배열을 정렬하고
+// dq에서 꺼낸후 우선순위 제일 높은건지 확인하고 꺼낸다.
+// 그 후 내가 원한 location인지 체크한다.
 class Solution {
     public int solution(int[] priorities, int location) {
         int answer = 0;

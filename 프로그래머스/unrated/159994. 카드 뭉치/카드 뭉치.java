@@ -28,7 +28,6 @@ class Solution {
                 }
             }
             
-            if(!check){
                 for(int j = 0; j < cards2.length; j++){
                     if(goal[i].equals(cards2[j])){
                         if(idx2<=j && j-idx2 == 1){
@@ -43,7 +42,6 @@ class Solution {
                         chk = true;
                     }
                 }
-            }
         }
         
         for(int i = 0; i<goal.length; i++){

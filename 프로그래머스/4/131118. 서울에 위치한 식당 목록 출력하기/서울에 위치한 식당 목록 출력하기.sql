@@ -5,7 +5,9 @@
 # 결과는 평균점수 기준 내림차순, 즐찾수 내림차순
 
 select i.rest_id, i.rest_name, i.food_type, i.favorites, i.address, round(avg(r.review_score),2) avg_score
-from rest_info i, rest_review r
+from rest_info i
+join rest_review r
+on i.rest_id = r.rest_id
 where substring(i.address,1,2)='서울' and i.rest_id = r.rest_id
 group by r.rest_id
 order by avg_score desc, i.favorites desc

@@ -3,7 +3,6 @@
 # 년,월,성별 별로 상품구매한 회원수를 집계
 ## 년월성별 기준오름차순, 성별없으면 결과 제거
 
-
 select year(o.sales_date) YEAR, month(o.sales_date) MONTH, u.gender GENDER, count(distinct u.user_id) USERS
 from user_info u
 join online_sale o
